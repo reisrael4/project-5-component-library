@@ -1,11 +1,11 @@
 import React from "react";
 import "./Button.css";
-
+//study prettier altering code
 const Button = props => {
   let classList = "";
   let types = ["primary", "danger", "success", "warning"];
   if (types.includes(props.type)) {
-      classList += ` button-${props.type}`;
+    classList += ` button-${props.type}`;
   }
   if (props.hover) {
     if (!props.type) {
