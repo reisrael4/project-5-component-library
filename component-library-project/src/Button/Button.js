@@ -3,33 +3,32 @@ import "./Button.css";
 
 const Button = props => {
   let classList = "";
-  let types = [
-    "primary",
-    "danger",
-    "success",
-    "warning",
-    "default",
-    "primary-pale",
-    "danger-pale",
-    "success-pale",
-    "warning-pale",
-    "default-pale"
-  ];
+  let types = ["primary", "danger", "success", "warning"];
   if (types.includes(props.type)) {
-    classList += ` button-${props.type}`;
+      classList += ` button-${props.type}`;
+  }
+  if (props.hover) {
+    if (!props.type) {
+      classList += ` button-default-hover`;
+    } else {
+      classList += ` button-${props.type}-hover`;
+    }
   }
   if (props.large) {
     classList += ` button-large`;
   }
-  if(props.outline){
-      classList += ` button-outline`
+  if (props.outline) {
+    classList += ` button-outline`;
   }
-  if(props.white){
-      classList += ` button-white`
+  if (props.white) {
+    classList += ` button-white`;
   }
-  if(props.pale){
-      classList += ` button-${props.type}-pale`
-      classList += ` button-border`
+  if (props.pale) {
+    if (!props.type) {
+      classList += ` button-default-pale button-border`;
+    } else {
+      classList += ` button-${props.type}-pale button-border`;
+    }
   }
   return <button className={classList}>{props.label}</button>;
 };

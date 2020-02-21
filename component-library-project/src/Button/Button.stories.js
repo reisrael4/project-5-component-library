@@ -4,16 +4,16 @@ import { storiesOf } from "@storybook/react";
 import Button from "./Button";
 
 storiesOf("Button", module)
-  .add("Primary", () => <Button label="Primary" type="primary" white />)
-  .add("Danger", () => <Button label="Danger" type="danger" white />)
-  .add("Success", () => <Button label="Success" type="success" white />)
-  .add("Warning", () => <Button label="Warning" type="warning" white />)
-  .add("Default", () => <Button label="Default" type="default" white />)
-  .add("Large Primary", () => <Button label="Primary" type="primary" large white />)
-  .add("Large Danger", () => <Button label="Danger" type="danger" large white />)
-  .add("Large Success", () => <Button label="Success" type="success" large white />)
-  .add("Large Warning", () => <Button label="Warning" type="warning" large white />)
-  .add("Large Default", () => <Button label="Default" type="default" large white />)
+  .add("Primary", () => <Button label="Primary" type="primary" white hover />)
+  .add("Danger", () => <Button label="Danger" type="danger" white hover />)
+  .add("Success", () => <Button label="Success" type="success" white hover />)
+  .add("Warning", () => <Button label="Warning" type="warning" white hover />)
+  .add("Default", () => <Button label="Default" white hover />)
+  .add("Large Primary", () => <Button label="Primary" type="primary" large white hover />)
+  .add("Large Danger", () => <Button label="Danger" type="danger" large white hover />)
+  .add("Large Success", () => <Button label="Success" type="success" large white hover />)
+  .add("Large Warning", () => <Button label="Warning" type="warning" large white hover />)
+  .add("Large Default", () => <Button label="Default" large white hover />)
   .add("Primary Outline", () => (
     <Button label="Primary" type="primary" outline />
   ))
@@ -37,10 +37,10 @@ storiesOf("Button", module)
     <Button label="Warning" type="warning" large outline />
   ))
   .add("Default Outline", () => (
-    <Button label="Default" type="default" outline />
+    <Button label="Default" outline />
   ))
   .add("Large Default Outline", () => (
-    <Button label="Default" type="default" large outline />
+    <Button label="Default" large outline />
   ))
   .add("Primary Pale", () => (
     <Button label="Primary" type="primary" pale/>
@@ -65,8 +65,8 @@ storiesOf("Button", module)
     <Button label="Warning" type="warning" large pale/>
   ))
   .add("Default Pale", () => (
-    <Button label="Default" type="default" pale/>
+    <Button label="Default" pale/>
   ))
   .add("Large Default Pale", () => (
-    <Button label="Default" type="default" large pale/>
+    <Button label="Default" large pale/>
   ));
