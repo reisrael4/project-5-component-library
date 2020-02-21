@@ -69,4 +69,7 @@ storiesOf("Button", module)
   ))
   .add("Large Default Pale", () => (
     <Button label="Default" large pale/>
-  ));
+  ))
+  .add("heart button", () => (
+      <Button label="  " type="primary" pale/>
+  ))

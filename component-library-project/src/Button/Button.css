@@ -26,7 +26,7 @@ button {
 }
 
 .button-primary-pale {
-  background-color: rgba(51, 160, 255, .2);
+  background-color: rgba(51, 160, 255, 0.2);
 }
 .button-danger {
   background-color: #ff4858;
