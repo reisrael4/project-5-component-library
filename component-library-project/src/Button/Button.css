@@ -12,6 +12,16 @@ button {
   background-color: #2e90e5;
   border: #2e90e5;
 }
+.button-primary-outline {
+  background-color: white;
+  color: #33a0ff;
+  border: 2px solid #33a0ff;
+}
+.button-primary-pale {
+  background-color: #eaf5ff;
+  color: #33a0ff;
+  border: 2px solid #eaf5ff;
+}
 .button-danger {
   background-color: #ff4858;
   color: white;
@@ -20,6 +30,16 @@ button {
 .button-danger:hover {
   background-color: #f53848;
   border: #f53848;
+}
+.button-danger-outline {
+  background-color: white;
+  color: #ff4858;
+  border: 2px solid #ff4858;
+}
+.button-danger-pale {
+  background-color: #ffebed;
+  color: #ff4858;
+  border: 2px solid #ffebed;
 }
 .button-success {
   background-color: #0ad00a;
@@ -30,6 +50,16 @@ button {
   background-color: #07c107;
   border: #07c107;
 }
+.button-success-outline {
+  background-color: white;
+  color: #0ad00a;
+  border: 2px solid #0ad00a;
+}
+.button-success-pale {
+  background-color: #e6fae6;
+  color: #0ad00a;
+  border: 2px solid #e6fae6;
+}
 .button-warning {
   background-color: #ffc600;
   color: white;
@@ -39,6 +69,16 @@ button {
   background-color: #ebb600;
   border: #ebb600;
 }
+.button-warning-outline {
+  background-color: white;
+  color: #ffc600;
+  border: 2px solid #ffc600;
+}
+.button-warning-pale {
+  background-color: #fff9e5;
+  color: #FFC600;
+  border: 2px solid #fff9e5;
+}
 .button-default {
   background-color: #22262a;
   color: white;
@@ -47,4 +87,17 @@ button {
 .button-default:hover {
   background-color: #13161a;
   border: #13161a;
+}
+.button-default-outline {
+  background-color: white;
+  color: #22262a;
+  border: 2px solid #22262a;
+}
+.button-default-pale {
+  background-color: #f6f7f8;
+  color: #22262A;
+  border: 2px solid #f6f7f8;
+}
+.button-large {
+  padding: 10px 50px;
 }
