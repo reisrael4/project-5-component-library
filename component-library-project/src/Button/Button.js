@@ -9,11 +9,6 @@ const Button = props => {
     "success",
     "warning",
     "default",
-    "primary-outline",
-    "danger-outline",
-    "success-outline",
-    "warning-outline",
-    "default-outline",
     "primary-pale",
     "danger-pale",
     "success-pale",
@@ -26,7 +21,16 @@ const Button = props => {
   if (props.large) {
     classList += ` button-large`;
   }
-
+  if(props.outline){
+      classList += ` button-outline`
+  }
+  if(props.white){
+      classList += ` button-white`
+  }
+  if(props.pale){
+      classList += ` button-${props.type}-pale`
+      classList += ` button-border`
+  }
   return <button className={classList}>{props.label}</button>;
 };
 
