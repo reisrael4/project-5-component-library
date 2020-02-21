@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-//study prettier altering code
+//study prettier altering code trying again
 const Button = props => {
   let classList = "";
   let types = ["primary", "danger", "success", "warning"];
