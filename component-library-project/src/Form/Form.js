@@ -1,10 +1,12 @@
 import React from 'react';
 import "./Form.css";
+import Button from "../Button/Button";
 
 const Form = props => {
   let classList = "";
   let types = ["email", "dropdown", "counter", "code"];
   let placeholder = "";
+  let callback ="";
 
   if (types.includes(props.type)) {
     classList += ` form-${props.type}`;
@@ -42,6 +44,22 @@ const Form = props => {
           </select>
         </form>
       );
+  }
+  if((props.type === "code") && !props.large){
+      return(
+          <form>
+              <input type="text" placeholder={placeholder} className={classList} />
+              <Button type="primary" label={props.label} white/>
+          </form>
+      )
+  }
+  if (props.large && (props.type === "code")) {
+    return (
+      <form>
+        <input type="text" placeholder={placeholder} className={classList} />
+        <Button type="primary" label={props.label} large white />
+      </form>
+    );
   }
 };
 

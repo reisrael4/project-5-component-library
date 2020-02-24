@@ -46,6 +46,14 @@
   background-color: #f0f0f1;
   border: none;
 }
+.form-code{
+    padding: 5px 25px;
+    padding-left: 5px;
+}
+.code-large{
+    padding: 10px 50px;
+    padding-left: 10px;
+}
 .counter{
     display: flex;
     flex-direction: row;

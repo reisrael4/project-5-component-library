@@ -24,7 +24,6 @@ class Counter extends Component {
 
   render() {
     return (
-      <div>
         <div className="counter">
           <Button
             onClick={this.decreaseCount}
@@ -40,7 +39,6 @@ class Counter extends Component {
             outline
           />
         </div>
-      </div>
     );
   }
 }

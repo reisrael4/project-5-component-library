@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Form from './Form';
 import Counter from './Counter';
 
+
 storiesOf("Form", module)
   .add("Email", () => <Form label="Email" type="email" input="text" />)
   .add("Medium Email", () => (
@@ -21,14 +22,19 @@ storiesOf("Form", module)
     <Form placeholder="Select" type="dropdown" input="select" large />
   ))
   .add("Small Darker Dropdown", () => (
-    <Form placeholder="Select" type="dropdown" input="select" shadow/>
+    <Form placeholder="Select" type="dropdown" input="select" shadow />
   ))
   .add("Medium Darker Dropdown", () => (
-    <Form placeholder="Select" type="dropdown" input="select" medium shadow/>
+    <Form placeholder="Select" type="dropdown" input="select" medium shadow />
   ))
   .add("Large Darker Dropdown", () => (
-    <Form placeholder="Select" type="dropdown" input="select" large shadow/>
+    <Form placeholder="Select" type="dropdown" input="select" large shadow />
   ))
-  .add("Counter", () => (
-      <Counter type="counter" />
+  .add("Small Voucher", () => (
+    <Form label="Submit" placeholder="Voucher code" type="code" input="text" />
   ))
+  .add("Large Voucher", () => (
+    <Form label="Submit" placeholder="Voucher code" type="code" input="text" large />
+  ))
+  .add("Counter", () => <Counter type="counter" />);
+  
