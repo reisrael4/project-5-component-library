@@ -17,8 +17,8 @@ class Checkbox extends Component {
           type="checkbox"
           checked={this.state.checked}
           onClick={this.handleCheckboxChange}
-          label={this.props.label}
         />
+        {this.props.label}
       </div>
     );
   }
