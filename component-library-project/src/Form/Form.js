@@ -4,6 +4,7 @@ import "./Form.css";
 let Form = props => {
   let classList = "";
   let types = ["email", "dropdown", "counter", "code"];
+  let placeholder = "";
 
   if (types.includes(props.type)) {
     classList += ` form-${props.type}`;
@@ -14,12 +15,17 @@ let Form = props => {
   if (props.large) {
     classList += ` email-large`;
   }
+  if (!props.placeholder){
+        placeholder = `${props.label}`
+  } else{
+      placeholder = `${props.placeholder}`
+  }
 
   return (
     <form>
       <input
         type="text"
-        placeholder={props.placeholder}
+        placeholder={placeholder}
         className={classList}
       />
     </form>
