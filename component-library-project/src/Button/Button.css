@@ -11,8 +11,12 @@ img{
   margin-right: 5px;
 }
 
-.no-text {
-  padding: 5px 12px;
+.button-no-text {
+  padding-top: 5px;
+  padding-left: 6px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  background-position: center;
 }
 
 .button-default-hover:hover {
