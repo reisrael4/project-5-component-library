@@ -57,13 +57,14 @@
 .counter {
   display: flex;
   flex-direction: row;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   background: #f6f7f8;
   height: 40px;
   width: 80px;
 }
 .counter > button {
-  padding: 5px;
+  padding: 15px;
   margin: 5px;
   background: #f6f7f8;
 }
