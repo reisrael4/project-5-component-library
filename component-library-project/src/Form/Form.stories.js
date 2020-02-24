@@ -4,7 +4,6 @@ import Form from './Form';
 import Counter from './Counter';
 import Checkbox from './Checkbox';
 
-
 storiesOf("Form", module)
   .add("Email", () => <Form label="Email" type="email" input="text" />)
   .add("Medium Email", () => (

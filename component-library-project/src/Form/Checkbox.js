@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./Form.css";
+import './Form.css';
 
 class Checkbox extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       checked: false
     };
@@ -12,12 +12,8 @@ class Checkbox extends Component {
     this.setState({ checked: event.target.checked });
   render() {
     return (
-      <div className="check-container">
-        <input
-          type="checkbox"
-          checked={this.state.checked}
-          onClick={this.handleCheckboxChange}
-        />
+      <div>
+        <input type="checkbox" checked={this.state.checked} onClick={this.handleCheckboxChange}/>
         {this.props.label}
       </div>
     );
