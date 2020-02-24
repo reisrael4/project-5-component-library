@@ -6,7 +6,6 @@ const Form = props => {
   let classList = "";
   let types = ["email", "dropdown", "counter", "code"];
   let placeholder = "";
-  let callback ="";
 
   if (types.includes(props.type)) {
     classList += ` form-${props.type}`;
