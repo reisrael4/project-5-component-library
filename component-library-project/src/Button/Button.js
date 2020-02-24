@@ -1,6 +1,5 @@
 import React from "react";
 import "./Button.css";
-//study prettier altering code trying again
 const Button = props => {
   let classList = "";
   let types = ["primary", "danger", "success", "warning"];
@@ -30,6 +29,18 @@ const Button = props => {
       classList += ` button-${props.type}-pale button-border`;
     }
   }
+  if (props.none) {
+    classList += ` button-no-text`;
+  }
+  if (props.icon) {
+    return (
+      <button onClick={props.onClick} className={classList}>
+        <img src={props.icon} alt=''></img>
+        {props.label}
+      </button>
+    );
+  }
+  
   return <button className={classList}>{props.label}</button>;
 };
 
