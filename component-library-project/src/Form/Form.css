@@ -46,3 +46,19 @@
   background-color: #f0f0f1;
   border: none;
 }
+.counter{
+    display: flex;
+    flex-direction: row;
+    background: #F6F7F8;
+    height: 40px;
+    width: 50px;
+    border: 1px solid #F6F7F8;
+}
+.plus, .count, .minus{
+    padding: 5px;
+    margin: 5px;
+}
+.plus, .minus{
+    border: none !important;
+    background: #F6F7F8 !important;
+}

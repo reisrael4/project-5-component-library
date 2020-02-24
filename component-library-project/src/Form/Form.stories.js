@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Form from './Form'
+import Form from './Form';
+import Counter from './Counter';
 
 storiesOf("Form", module)
   .add("Email", () => <Form label="Email" type="email" input="text" />)
@@ -27,4 +28,7 @@ storiesOf("Form", module)
   ))
   .add("Large Darker Dropdown", () => (
     <Form placeholder="Select" type="dropdown" input="select" large shadow/>
-  ));
+  ))
+  .add("Counter", () => (
+      <Counter type="counter" />
+  ))

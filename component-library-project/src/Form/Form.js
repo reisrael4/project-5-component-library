@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./Form.css";
 
 const Form = props => {
@@ -45,41 +45,4 @@ const Form = props => {
   }
 };
 
-class Counter extends Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0
-    };
-  }
-  increaseCount = () => {
-    let count = this.state.count + 1;
-    this.setState({
-      count: count
-    });
-  };
-  decreaseCount = () => {
-    let count = this.state.count - 1;
-    this.setState({
-      count: count
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <div>
-          <h1>Count: {this.state.count}</h1>
-          <button onClick={this.increaseCount}>+</button>
-          <button onClick={this.decreaseCount}>-</button>
-        </div>
-      </div>
-    );
-  }
-}
-
-
-export default {
-    Counter, 
-    Form
-};
+export default Form;
