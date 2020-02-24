@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Form from './Form';
 import Counter from './Counter';
+import Checkbox from './Checkbox';
 
 
 storiesOf("Form", module)
@@ -36,5 +37,7 @@ storiesOf("Form", module)
   .add("Large Voucher", () => (
     <Form label="Submit" placeholder="Voucher code" type="code" input="text" large />
   ))
-  .add("Counter", () => <Counter type="counter" />);
-  
+  .add("Counter", () => <Counter type="counter" />)
+  .add("Checkbox", () => (
+      <Checkbox label="Don't show this popup again"/>
+  ))
