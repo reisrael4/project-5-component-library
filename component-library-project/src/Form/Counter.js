@@ -28,7 +28,6 @@ class Counter extends Component {
         <div className="counter">
           <Button
             onClick={this.decreaseCount}
-            className="minus"
             label="-"
             type="primary"
             outline
@@ -36,7 +35,6 @@ class Counter extends Component {
           <p className="count">{this.state.count}</p>
           <Button
             onClick={this.increaseCount}
-            className="plus"
             label="+"
             type="primary"
             outline

@@ -49,16 +49,16 @@
 .counter{
     display: flex;
     flex-direction: row;
+    justify-items: center;
     background: #F6F7F8;
     height: 40px;
-    width: 50px;
-    border: 1px solid #F6F7F8;
+    width: 80px;
 }
-.plus, .count, .minus{
+.count, .counter>button{
     padding: 5px;
     margin: 5px;
+    background: #F6F7F8;
 }
-.plus, .minus{
-    border: none !important;
-    background: #F6F7F8 !important;
+.counter>button{
+    border: none;
 }

@@ -41,7 +41,7 @@ const Button = props => {
     );
   }
   
-  return <button className={classList}>{props.label}</button>;
+  return <button className={classList} onClick={props.onClick}>{props.label}</button>;
 };
 
 export default Button;
